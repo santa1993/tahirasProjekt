@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entdecke Tübingen und Region!</title>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/> <!---leaflet map-->
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> <!---leaflet map-->
+  <script src="https://unpkg.com/jquery@3.2.1"></script> <!---jquery lib-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!---bootstrap responsiv-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!---bootstrap style-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!---jquery-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><!---bootstrap js-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.10/leaflet.draw.css" /> <!---draw point -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.10/leaflet.draw.js"></script> 
+  <script type="text/javascript" src="static/js/proj4js-combined.js"></script>
+
+  
+  <style>
+
+    .dropdown{
+        right: -267px;
+        bottom: 75px;
+
+    }
+
+    #map{ 
+        height: 400px;
+        width: 700px;
+    }
+
+    #infobox{
+      height: 700px;
+      width: 900px;
+
+    }
+
+
+    h1 {
+        font-size: 100%;
+        font-weight: bold;
+    }
+
+
+
+</style>
+</head>
+<body>
+  
+  
+<div class="container">
+
+  <div id="infobox">
+ 
+  <h2>Bitte deinen Standort eingeben</h2>
+
+
+  <label>Straße &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="c" id="strasse"></label>
+  <br/>
+  <label>Distanz[m]<input type="distanz" name="distanz" id="dist"></label>
+  <button type="button" class="btn btn-warning" id="ok">ok</button> 
+
+
+  
+
+  <select id="selectid" name="selectid" >
+
+      <option value="Aldi" id="ALDI"> ALDI </option>
+      <option value="Rewe" id="REWE"> REWE </option>
+      <option value="Netto" id="Netto"> Netto </option>
+      <option value="Edeka" id="Edeka"> Edeka</option>
+
+
+  </select>
+
+
+
+
+   
+  <div id="map"></div>
+
+ </div>
+
+</div>
+
+<script type="text/javascript" src="static/js/scripts.js"></script>
+
+<script type="text/javascript" src="static/js/proj4js-combined.js"></script>
+<script type="text/javascript" src="static/js/defs/EPSG3857.js"></script>
+
+
+
+</body>
+</html>
+	
+
